@@ -1,0 +1,10 @@
+
+# [START anthos_config_management_multi_environments_kustomize_config_source_base_kustomization] 
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- service_account.yaml
+- namespace.yaml
+- cluster_role_binding.yaml
+- cluster_role.yaml
+- daemonset.yaml
